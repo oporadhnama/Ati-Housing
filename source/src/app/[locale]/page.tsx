@@ -201,7 +201,7 @@ export default function HomePage() {
         </RevealOnScroll>
 
         {/* Testimonials — dark section for glassmorphism cards */}
-        <section className="py-20 md:py-28 bg-[#0b1420] relative overflow-hidden">
+        <section className="py-16 md:py-28 bg-[#0b1420] relative overflow-hidden">
           {/* Radial glow decoration */}
           <div className="absolute inset-0 pointer-events-none">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[400px] rounded-full bg-brand-gold/4 blur-3xl" />
@@ -225,7 +225,7 @@ export default function HomePage() {
         />
 
         {/* Contact and Map panel */}
-        <section className="py-16 md:py-24 bg-surface-cream">
+        <section className="py-12 md:py-24 bg-surface-cream">
           <div className="container mx-auto px-4 md:px-6">
             <RevealOnScroll delay={0.05}>
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">

@@ -10,6 +10,8 @@ import { Button } from '../Button/Button';
 
 import { LanguageToggle } from '../LanguageToggle/LanguageToggle';
 
+import { motion } from 'framer-motion';
+
 export const NavMobile: React.FC<NavMobileProps> = ({
   isOpen,
   onClose,
@@ -37,18 +39,20 @@ export const NavMobile: React.FC<NavMobileProps> = ({
     { label: t('contact'), href: '/contact' },
   ];
 
-  if (!isOpen) return null;
-
   return (
-    <div
+    <motion.div
+      initial={{ x: '100%', opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      exit={{ x: '100%', opacity: 0 }}
+      transition={{ type: 'spring', damping: 25, stiffness: 200 }}
       id="mobile-navigation-drawer"
-      className={`fixed inset-0 z-50 bg-brand-navy flex flex-col justify-between p-6 transition-all duration-300 ${className}`}
+      className={`fixed inset-0 z-50 bg-brand-navy/95 backdrop-blur-md flex flex-col justify-between p-6 ${className}`}
       role="dialog"
       aria-modal="true"
       aria-label="Mobile navigation menu"
     >
       {/* Header row */}
-      <div className="flex items-center justify-between animate-fade-in">
+      <div className="flex items-center justify-between">
         <Link href="/" onClick={onClose} className="relative w-32 h-9">
           <Image
             src="/images/logo.svg"
@@ -69,27 +73,38 @@ export const NavMobile: React.FC<NavMobileProps> = ({
       {/* Nav List */}
       <nav className="flex flex-col items-center justify-center space-y-6 my-auto" aria-label="Mobile navigation">
         {navLinks.map((link, index) => (
-          <Link
+          <motion.div
             key={index}
-            href={link.href}
-            onClick={onClose}
-            className="text-white hover:text-brand-gold font-display text-2xl font-bold tracking-wide transition-colors duration-200 focus-visible:outline-brand-gold"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1 + index * 0.08, ease: 'easeOut' }}
           >
-            {link.label}
-          </Link>
+            <Link
+              href={link.href}
+              onClick={onClose}
+              className="text-white hover:text-brand-gold font-display text-3xl font-bold tracking-wide transition-colors duration-200 focus-visible:outline-brand-gold"
+            >
+              {link.label}
+            </Link>
+          </motion.div>
         ))}
       </nav>
 
       {/* Footer CTA */}
-      <div className="w-full flex flex-col space-y-5 items-center">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.5, ease: 'easeOut' }}
+        className="w-full flex flex-col space-y-5 items-center"
+      >
         <LanguageToggle className="border-white/20 bg-white/5 !text-white text-opacity-100" />
-        <Button variant="primary" size="lg" href="/contact" onClick={onClose} className="w-full">
+        <Button variant="primary" size="lg" href="/contact" onClick={onClose} className="w-full shadow-lg shadow-brand-gold/20">
           {t('bookVisit')}
         </Button>
         <p className="text-gray-400 text-center text-xs tracking-wider font-body">
           ATI MODEL TOWN · KERANIGANJ
         </p>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };

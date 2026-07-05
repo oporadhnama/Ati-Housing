@@ -193,7 +193,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       </div>
 
       {/* ─── Content Area ─── */}
-      <div className="container mx-auto px-4 md:px-6 relative z-20 pt-28 pb-20 md:pt-36 md:pb-28">
+      <div className="container mx-auto px-4 md:px-6 relative z-20 pt-24 pb-16 md:pt-36 md:pb-28">
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -212,14 +212,14 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
           {/* ─── Per-Slide Animated Text ─── */}
           <AnimatePresence mode="wait">
-            <motion.div key={`text-${bgIndex}`} className="mb-10">
+            <motion.div key={`text-${bgIndex}`} className="mb-8">
               {/* Main Headline */}
               <motion.h1
                 initial={prefersReducedMotion ? {} : { opacity: 0, y: 28, filter: 'blur(6px)' }}
                 animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
                 exit={prefersReducedMotion ? {} : { opacity: 0, y: -18, filter: 'blur(6px)' }}
                 transition={textTransition}
-                className="text-4xl sm:text-5xl md:text-[4.25rem] xl:text-[5rem] font-display font-bold leading-[1.04] tracking-tight text-white mb-6"
+                className="text-3xl sm:text-4xl md:text-[4.25rem] xl:text-[5rem] font-display font-bold leading-[1.04] tracking-tight text-white mb-5"
               >
                 {currentSlide.headline}
               </motion.h1>

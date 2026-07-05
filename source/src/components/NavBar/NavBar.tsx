@@ -161,7 +161,11 @@ export const NavBar: React.FC<NavBarProps> = ({ className = '' }) => {
         </div>
       </motion.header>
 
-      <NavMobile isOpen={isMobileMenuOpen} onClose={() => setIsMobileMenuOpen(false)} />
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <NavMobile isOpen={isMobileMenuOpen} onClose={() => setIsMobileMenuOpen(false)} />
+        )}
+      </AnimatePresence>
     </>
   );
 };
