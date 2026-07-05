@@ -4,7 +4,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Search, X, MapPin, Building2, Trees } from 'lucide-react';
 import { SearchModalProps } from './SearchModal.types';
-import { useTranslations } from 'next-intl';
+
 import { Link } from '@/navigation';
 import { useRouter } from '@/navigation';
 
