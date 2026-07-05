@@ -159,6 +159,13 @@ export const NavBar: React.FC<NavBarProps> = ({ className = '' }) => {
             </button>
           </div>
         </div>
+
+        {/* Prototype Warning Marquee */}
+        <div className="w-full bg-red-600 text-white overflow-hidden border-t border-red-700">
+          <div className="whitespace-nowrap py-1 text-xs font-medium tracking-wider flex" style={{ animation: 'marquee 25s linear infinite' }}>
+            <span className="shrink-0 pl-[100%]">It&apos;s not properly built it&apos;s an prototype model type line that scrolls from right to left slowly</span>
+          </div>
+        </div>
       </motion.header>
 
       <NavMobile isOpen={isMobileMenuOpen} onClose={() => setIsMobileMenuOpen(false)} />
