@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 45" fill="none">
+  <!-- House icon -->
+  <path d="M10 35L10 18L20 10L30 18L30 35H25V25H15V35H10Z" fill="#1B5E20"/>
+  <path d="M20 13L12 19V22H14V30H18V23H22V30H26V22H28V19L20 13Z" fill="#D4A843"/>
+  <!-- ATI Housing text -->
+  <text x="40" y="28" font-family="'Plus Jakarta Sans',Arial,sans-serif" font-size="22" font-weight="800" fill="#1B5E20" letter-spacing="0.5">ATI</text>
+  <text x="82" y="28" font-family="'Plus Jakarta Sans',Arial,sans-serif" font-size="22" font-weight="300" fill="#0D3B0F" letter-spacing="0.5">Housing</text>
+  <rect x="40" y="34" width="90" height="2" rx="1" fill="#D4A843" opacity="0.6"/>
+</svg>
+

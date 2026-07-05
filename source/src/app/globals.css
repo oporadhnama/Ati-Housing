@@ -1,0 +1,454 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ═══════════════════════════════════════════════
+   ATI SOCIETY — ELITE DESIGN SYSTEM
+   Premium CSS variables, animations, utilities
+═══════════════════════════════════════════════ */
+
+:root {
+  --brand-navy: #192B45;
+  --brand-navy-deep: #0b1420;
+  --brand-gold: #B8975A;
+  --brand-gold-light: #D4B07A;
+  --brand-gold-dark: #8C6E3C;
+  --brand-gold-pale: rgba(184, 151, 90, 0.12);
+  --surface-cream: #F7F4EE;
+  --surface-white: #FFFFFF;
+  --surface-dark: #111827;
+  --text-primary: #1C1C1E;
+  --text-muted: #6B7280;
+  --border-subtle: rgba(184, 151, 90, 0.18);
+
+  /* Gold glow token */
+  --shadow-gold-sm: 0 0 12px rgba(184, 151, 90, 0.25);
+  --shadow-gold-md: 0 0 28px rgba(184, 151, 90, 0.35);
+  --shadow-gold-lg: 0 4px 48px rgba(184, 151, 90, 0.22);
+
+  /* Transition speed tokens */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-quart: cubic-bezier(0.77, 0, 0.175, 1);
+  --dur-fast: 200ms;
+  --dur-mid: 400ms;
+  --dur-slow: 700ms;
+}
+
+/* ── Base Body ── */
+body {
+  color: var(--text-primary);
+  background-color: var(--surface-white);
+  font-family: var(--font-inter), sans-serif;
+  overflow-x: hidden;
+  cursor: none; /* Hide default cursor for custom cursor */
+}
+
+/* Global Grain Overlay */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9998;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Fallback for when Custom Cursor isn't active */
+@media (max-width: 768px) {
+  body {
+    cursor: auto;
+  }
+}
+
+a, button, input, textarea, select, .interactive {
+  cursor: none;
+}
+
+/* ── Custom Scrollbar ── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--brand-navy-deep); }
+::-webkit-scrollbar-thumb {
+  background: var(--brand-gold-dark);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--brand-gold); }
+
+/* ── Focus styles ── */
+*:focus-visible {
+  outline: 2px solid var(--brand-gold);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ════════════════════════════════════
+   KEYFRAME ANIMATIONS
+════════════════════════════════════ */
+
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes pulse-gold {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(184,151,90,0.4); }
+  50%       { box-shadow: 0 0 0 8px rgba(184,151,90,0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-6px); }
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes gold-line-grow {
+  from { width: 0; opacity: 0; }
+  to   { width: 3rem; opacity: 1; }
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes diagonal-slide {
+  0%   { transform: translateX(-100%) skewX(-15deg); opacity: 0; }
+  50%  { opacity: 0.15; }
+  100% { transform: translateX(400%) skewX(-15deg); opacity: 0; }
+}
+
+/* ════════════════════════════════════
+   HERO SECTION
+════════════════════════════════════ */
+
+.hero-overlay-gradient {
+  background:
+    linear-gradient(
+      to right,
+      rgba(11, 20, 32, 0.85) 0%,
+      rgba(11, 20, 32, 0.55) 55%,
+      rgba(11, 20, 32, 0.25) 100%
+    ),
+    linear-gradient(
+      to top,
+      rgba(11, 20, 32, 0.92) 0%,
+      transparent 40%
+    );
+}
+
+/* ════════════════════════════════════
+   GLASSMORPHISM NAV
+════════════════════════════════════ */
+
+.glassmorphism {
+  background: rgba(11, 20, 32, 0.88);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border-bottom: 1px solid rgba(184, 151, 90, 0.18);
+  box-shadow: 0 4px 32px rgba(0,0,0,0.22);
+}
+
+/* ════════════════════════════════════
+   NAV LINK UNDERLINE
+════════════════════════════════════ */
+
+.nav-link-elite {
+  position: relative;
+}
+.nav-link-elite::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background: linear-gradient(90deg, var(--brand-gold), var(--brand-gold-light));
+  transition: width var(--dur-mid) var(--ease-out-expo);
+}
+.nav-link-elite:hover::after { width: 100%; }
+
+/* ════════════════════════════════════
+   SECTION HEADER — Gold Animated Rule
+════════════════════════════════════ */
+
+.section-gold-rule {
+  display: inline-block;
+  height: 2px;
+  width: 3rem;
+  background: linear-gradient(90deg, var(--brand-gold), var(--brand-gold-light), transparent);
+  animation: gold-line-grow 0.6s var(--ease-out-expo) both;
+  border-radius: 2px;
+}
+
+/* ════════════════════════════════════
+   ELITE CARDS
+════════════════════════════════════ */
+
+.card-elite {
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow var(--dur-mid) ease, border-color var(--dur-mid) ease, transform var(--dur-mid) ease;
+}
+.card-elite::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(184,151,90,0.06) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity var(--dur-mid) ease;
+  pointer-events: none;
+  z-index: 1;
+}
+.card-elite:hover::before { opacity: 1; }
+.card-elite:hover {
+  box-shadow: 0 8px 32px rgba(184,151,90,0.12), 0 2px 8px rgba(0,0,0,0.08);
+  transform: translateY(-3px);
+}
+
+/* Gold bottom-border expand on hover */
+.card-elite::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--brand-gold), transparent);
+  transition: width var(--dur-slow) var(--ease-out-expo);
+}
+.card-elite:hover::after { width: 100%; }
+
+/* ════════════════════════════════════
+   SHIMMER BUTTON EFFECT
+════════════════════════════════════ */
+
+.btn-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+.btn-shimmer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    105deg,
+    transparent 40%,
+    rgba(255,255,255,0.18) 50%,
+    transparent 60%
+  );
+  transition: left 0.5s ease;
+}
+.btn-shimmer:hover::after { left: 140%; }
+
+/* ════════════════════════════════════
+   STAT COUNTER — Gold Glow
+════════════════════════════════════ */
+
+.stat-glow {
+  text-shadow: 0 0 20px rgba(184,151,90,0.5), 0 0 40px rgba(184,151,90,0.25);
+}
+
+/* ════════════════════════════════════
+   TRUST BAR — CSS Marquee
+════════════════════════════════════ */
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+}
+.marquee-track:hover { animation-play-state: paused; }
+
+/* ════════════════════════════════════
+   CTA BAND — Diagonal Shimmer
+════════════════════════════════════ */
+
+.cta-diagonal-shimmer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  background: linear-gradient(
+    105deg,
+    transparent 40%,
+    rgba(184, 151, 90, 0.12) 50%,
+    transparent 60%
+  );
+  animation: diagonal-slide 4s ease-in-out 1s infinite;
+}
+
+/* ════════════════════════════════════
+   TESTIMONIAL — Glass Dark Card
+════════════════════════════════════ */
+
+.testimonial-glass {
+  background: rgba(25, 43, 69, 0.60);
+  backdrop-filter: blur(12px) saturate(160%);
+  -webkit-backdrop-filter: blur(12px) saturate(160%);
+  border: 1px solid rgba(184, 151, 90, 0.18);
+}
+
+/* ════════════════════════════════════
+   DECORATIVE GEOMETRICS
+════════════════════════════════════ */
+
+.decorative-geo {
+  background: linear-gradient(135deg, var(--brand-gold) 0%, var(--brand-gold-dark) 100%);
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+}
+
+.gold-dot-diamond {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: var(--brand-gold);
+  transform: rotate(45deg);
+  flex-shrink: 0;
+}
+
+/* ════════════════════════════════════
+   SECTION PATTERN BG
+════════════════════════════════════ */
+
+.section-pattern-bg {
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(184,151,90,0.06) 1px, transparent 0);
+  background-size: 28px 28px;
+}
+
+/* ════════════════════════════════════
+   FLOATING BADGE ANIMATION
+════════════════════════════════════ */
+
+.float-anim {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* ════════════════════════════════════
+   SCROLLBAR FOR MOBILE DRAWER
+════════════════════════════════════ */
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* ════════════════════════════════════
+   HERO AMBIENT PARTICLES
+════════════════════════════════════ */
+
+@keyframes particle-float {
+  0%   { transform: translateY(0px) scale(1); opacity: 0.5; }
+  50%  { transform: translateY(-28px) scale(1.2); opacity: 0.9; }
+  100% { transform: translateY(0px) scale(1); opacity: 0.5; }
+}
+
+.hero-particle {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(184,151,90,0.85) 0%, rgba(184,151,90,0.1) 100%);
+  animation: particle-float ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* ════════════════════════════════════
+   CTA BAND PARTICLES
+════════════════════════════════════ */
+
+@keyframes cta-particle-float {
+  0%   { transform: translateY(0px); opacity: 0.4; }
+  50%  { transform: translateY(-20px); opacity: 0.8; }
+  100% { transform: translateY(0px); opacity: 0.4; }
+}
+
+.cta-particle {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(184,151,90,0.7) 0%, rgba(184,151,90,0.0) 100%);
+  animation: cta-particle-float ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* ════════════════════════════════════
+   CTA GRAIN TEXTURE OVERLAY
+════════════════════════════════════ */
+
+.cta-grain-overlay {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23grain)' opacity='1'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 200px 200px;
+}
+
+/* ════════════════════════════════════
+   LOGO SHIMMER ON HOVER
+════════════════════════════════════ */
+
+@keyframes logo-shimmer-pass {
+  0%   { left: -100%; opacity: 0; }
+  30%  { opacity: 1; }
+  100% { left: 140%; opacity: 0; }
+}
+
+.logo-shimmer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.logo-shimmer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(
+    105deg,
+    transparent 40%,
+    rgba(184, 151, 90, 0.22) 50%,
+    transparent 60%
+  );
+}
+
+.group:hover .logo-shimmer::after {
+  animation: logo-shimmer-pass 0.7s ease forwards;
+}
+
+/* ════════════════════════════════════
+   NAV ACTIVE LINK INDICATOR
+════════════════════════════════════ */
+
+.nav-link-active::after {
+  width: 100% !important;
+  background: linear-gradient(90deg, var(--brand-gold), var(--brand-gold-light)) !important;
+}
+
+/* ════════════════════════════════════
+   STAT COUNTER — Shimmer Finish
+════════════════════════════════════ */
+
+@keyframes stat-shimmer-finish {
+  0%   { text-shadow: 0 0 20px rgba(184,151,90,0.5), 0 0 40px rgba(184,151,90,0.25); }
+  50%  { text-shadow: 0 0 40px rgba(184,151,90,0.9), 0 0 80px rgba(184,151,90,0.6), 0 0 120px rgba(184,151,90,0.3); }
+  100% { text-shadow: 0 0 20px rgba(184,151,90,0.5), 0 0 40px rgba(184,151,90,0.25); }
+}
+
+.stat-finished {
+  animation: stat-shimmer-finish 0.8s ease-out 0s 1;
+}
+
+/* ════════════════════════════════════
+   AMENITY BORDER TRANSITION TWEAK
+════════════════════════════════════ */
+
+.duration-400 { transition-duration: 400ms; }
+

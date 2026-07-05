@@ -1,0 +1,386 @@
+{
+  "Nav": {
+    "home": "Home",
+    "plots": "Available Plots",
+    "amenities": "Amenities",
+    "about": "About Us",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "bookVisit": "Book Site Visit"
+  },
+  "Hero": {
+    "headline": "Secure Your Future at Ati Model Town",
+    "subheadline": "Invest in RAJUK-approved residential and commercial plots in Keraniganj, Dhaka.",
+    "ctaPlots": "View Plots",
+    "ctaVisit": "Book Free Site Visit",
+    "slides": [
+      {
+        "headline": "Secure Your Future at Ati Model Town",
+        "subheadline": "Invest in RAJUK-approved residential and commercial plots in Keraniganj — your gateway to premium living."
+      },
+      {
+        "headline": "Premium Residential & Commercial Plots",
+        "subheadline": "Choose from our RAJUK-approved 3, 5, 10, or 20 Katha plots ready for immediate handover."
+      },
+      {
+        "headline": "A Serene Lifestyle Amidst Greenery",
+        "subheadline": "Beautifully landscaped parks, walking trails, and natural lakes for a healthy and peaceful living."
+      },
+      {
+        "headline": "World-Class Education Inside the Project",
+        "subheadline": "Top-tier educational institutions within Ati Model Town, securing a bright future for your children."
+      },
+      {
+        "headline": "Secure & Modern Gated Community",
+        "subheadline": "Home to over 25,000 happy residents with 24/7 round-the-clock security and full utility connections."
+      }
+    ]
+  },
+  "TrustBar": {
+    "signals": [
+      "16 Years of Reliability",
+      "1400+ Plots Transferred",
+      "RAJUK Approved Project",
+      "25000+ Happy Residents"
+    ]
+  },
+  "Search": {
+    "headline": "Find Your Preferred Plot",
+    "selectType": "Select Plot Type",
+    "selectSize": "Select Plot Size",
+    "selectPurpose": "Select Purpose",
+    "btnSearch": "Search"
+  },
+  "Plots": {
+    "title": "Available Plots",
+    "headline": "Planned Plots",
+    "subline": "Explore our best plots for your family's dream home or commercial venture.",
+    "general": {
+      "title": "Standard Residential Plot",
+      "description": "Quiet and peaceful residential plots located in inner blocks. Ideal for building multi-family homes or duplexes.",
+      "tag": "Residential",
+      "sizes": "3, 5, 7.5 and 10 Katha",
+      "features": [
+        "30-feet wide paved internal roads",
+        "Direct utility connection facilities",
+        "Ready mutation files for registration"
+      ]
+    },
+    "avenue": {
+      "title": "Avenue Residential Plot",
+      "description": "Attractive plots facing the main 60 and 40-feet roads of Ati Model Town. Perfect for premium homes with spacious frontages.",
+      "tag": "Premium",
+      "sizes": "5, 7.5, 10 and 20 Katha",
+      "features": [
+        "Direct access from main roads",
+        "Paved roads with modern street lighting",
+        "Regular security patrols by society guards"
+      ]
+    },
+    "commercial": {
+      "title": "Premium Commercial Plot",
+      "description": "High-traffic commercial plots ideal for shopping malls, super shops, bank branches, or medical centers.",
+      "tag": "Commercial",
+      "sizes": "5, 10 and 20+ Katha",
+      "features": [
+        "Located in the heart of commercial zones",
+        "Flexible construction guidelines for multi-story buildings",
+        "Dedicated customer parking zones"
+      ]
+    },
+    "hospital": {
+      "title": "Institutional Special Plot",
+      "description": "A dedicated 1.5-acre zone for healthcare facilities, securing medical services for Keraniganj and South Dhaka.",
+      "tag": "Institutional",
+      "sizes": "1.5 Acres (Customizable)",
+      "features": [
+        "Approved under RAJUK institutional guidelines",
+        "Modern drainage systems for waste disposal",
+        "Wide access roads for emergency vehicles"
+      ]
+    },
+    "customLayout": "Need a Special Size?",
+    "customText": "We allocate custom plot sizes for corporate offices and large estates. Contact us today.",
+    "downloadBrochure": "Download Brochure (PDF)",
+    "requestPrice": "Want to Know the Prices?"
+  },
+  "Amenities": {
+    "title": "Civic Amenities",
+    "headline": "All Modern Lifestyle Amenities",
+    "subline": "Ati Model Town features modern amenities and utilities to ensure a comfortable civic life.",
+    "introText": "Ati Model Town is not just a housing project. It is a planned self-sufficient community featuring quality education, healthcare, and civic services.",
+    "school": {
+      "title": "Educational Institutes",
+      "description": "High-quality schools inside the project.",
+      "features": [
+        "Bangla and English version curriculum",
+        "Spacious playground and classrooms",
+        "Own school bus service for students"
+      ]
+    },
+    "hospital": {
+      "title": "Specialized Hospital",
+      "description": "1.5-acre modern healthcare center.",
+      "features": [
+        "24/7 emergency and trauma care",
+        "Modern outpatient facilities",
+        "Ample ambulance parking zones"
+      ]
+    },
+    "mall": {
+      "title": "Shopping Mall",
+      "description": "All shopping needs close to home.",
+      "features": [
+        "Wide range of groceries and cosmetic items",
+        "Food court and children's play zones",
+        "Basement parking facilities"
+      ]
+    },
+    "mosque": {
+      "title": "Central Mosque",
+      "description": "Spacious and beautiful prayer area.",
+      "features": [
+        "Capacity for 2,000 worshippers",
+        "Separate praying section for women",
+        "Islamic library and study zones"
+      ]
+    },
+    "park": {
+      "title": "Parks & Lakes",
+      "description": "Lush green parks and lakes for recreation.",
+      "features": [
+        "Paved walking and jogging tracks",
+        "Amusement rides for kids",
+        "Beautiful scenic lake with benches"
+      ]
+    },
+    "community": {
+      "title": "Community Center",
+      "description": "Dedicated venue for social events.",
+      "features": [
+        "Air-conditioned wedding and banquet halls",
+        "Large community kitchen for catering",
+        "Society council administration office"
+      ]
+    },
+    "club": {
+      "title": "Sports Club & Gym",
+      "description": "Modern gym and indoor sports area.",
+      "features": [
+        "Fully equipped fitness center",
+        "Indoor badminton and table tennis",
+        "Outdoor football practice grounds"
+      ]
+    },
+    "roads": {
+      "title": "Wide Internal Roads",
+      "description": "30 to 60 feet wide internal roads.",
+      "features": [
+        "60-feet wide main avenues",
+        "Pedestrian footpaths on both sides",
+        "Planned stormwater drainage systems"
+      ]
+    },
+    "lifestyleHeadline": "Life at Ati Model Town",
+    "lifestyleText": "Imagine a neighborhood where your children can walk safely to school, where healthcare is just a step away, and scenic parks are at your doorstep. We have created a beautiful habitat combining green spaces with modern amenities for your family."
+  },
+  "WhyAti": {
+    "headline": "Why Choose ATI Society?",
+    "points": [
+      {
+        "title": "RAJUK Approved & Legal",
+        "text": "Every plot is backed by clear CS, RS, and BS mutation records, ensuring smooth and hassle-free ownership transfer."
+      },
+      {
+        "title": "Ready Infrastructure",
+        "text": "All utilities are ready, including paved roads, electricity, water, and structured drainage systems."
+      },
+      {
+        "title": "Secure Gated Community",
+        "text": "24/7 security guards and CCTV surveillance ensure the safety of your family and properties."
+      },
+      {
+        "title": "Strategic Connectivity",
+        "text": "Excellent connectivity with major highways allows easy access to all parts of Dhaka city."
+      }
+    ]
+  },
+  "Stats": {
+    "years": {
+      "number": "16",
+      "label": "Years of Trust"
+    },
+    "plots": {
+      "number": "1400",
+      "label": "Plots Handed Over"
+    },
+    "roads": {
+      "number": "60",
+      "label": "Ft Wide Main Road"
+    },
+    "families": {
+      "number": "25000",
+      "label": "Happy Residents"
+    }
+  },
+  "Testimonials": {
+    "headline": "What Our Clients Say",
+    "items": [
+      {
+        "quote": "Buying a plot here was the best decision for my family. The paperwork was completely transparent and mutation was completed in less than a month.",
+        "author": "Kamrul Hasan",
+        "role": "Avenue Plot Owner, Phase 1",
+        "initials": "KH"
+      },
+      {
+        "quote": "As an expat, I was worried about buying land in Dhaka. But ATI Society delivered exactly what was promised with clear deeds and timely development.",
+        "author": "Dr. Salma Begum",
+        "role": "General Plot Owner, Expat Investor",
+        "initials": "SB"
+      },
+      {
+        "quote": "The internal roads are wide, and the central park is excellent. Having a school inside the project makes it very convenient for my kids.",
+        "author": "Naimur Rahman",
+        "role": "Resident (Since 2018)",
+        "initials": "NR"
+      },
+      {
+        "quote": "We launched our retail shop here last year. The community response is great, and it has been a highly profitable commercial spot.",
+        "author": "Mohammad Ali",
+        "role": "Commercial Plot Owner",
+        "initials": "MA"
+      },
+      {
+        "quote": "A serene environment, yet very well connected to central Dhaka. Highly recommended.",
+        "author": "Tahmina Chowdhury",
+        "role": "General Plot Owner, Phase 2",
+        "initials": "TC"
+      }
+    ]
+  },
+  "Location": {
+    "headline": "Our Location",
+    "description": "Ati Model Town is strategically located in Keraniganj, Dhaka, away from the city's congestion but offering excellent highway connectivity.",
+    "addressLabel": "Address",
+    "addressValue": "Ati Model Town, Keraniganj, Dhaka-1312"
+  },
+  "CtaBand": {
+    "headline": "Secure Your Plot Before Phase 2 Sells Out",
+    "subline": "Over 85% of plots in the current phase are already sold. Book your site visit today.",
+    "btnLabel": "Schedule a Free Site Visit"
+  },
+  "Contact": {
+    "title": "Contact Us",
+    "headline": "Get in Touch",
+    "detailsHeadline": "Contact Us Today",
+    "detailsSubline": "Speak directly with our customer relations officer or book a slot for a site visit.",
+    "hoursLabel": "Office Hours",
+    "hoursValue": "Saturday – Thursday: 9:00 AM – 7:00 PM (Friday Closed)",
+    "whatsappCta": "Chat with us on WhatsApp",
+    "callUs": "Call Us",
+    "emailUs": "Email Us",
+    "formName": "Full Name",
+    "formPhone": "Phone Number",
+    "formEmail": "Email Address (Optional)",
+    "formPlotType": "Preferred Plot Type",
+    "formPlotSize": "Desired Size",
+    "formMessage": "Your Message",
+    "btnSubmit": "Send Request",
+    "successMessage": "Thank you! Our customer relations team will contact you within 24 hours.",
+    "mapTitle": "Ati Model Town Location Map",
+    "validationName": "Name must be at least 2 characters long.",
+    "validationPhone": "Please enter a valid Bangladeshi mobile number (e.g. 017XXXXXXXX).",
+    "validationEmail": "Please enter a valid email address."
+  },
+  "Gallery": {
+    "title": "Project Gallery",
+    "breadcrumbHome": "Home",
+    "breadcrumbGallery": "Gallery",
+    "catAll": "All Sectors",
+    "emptyState": "No photos available in this sector.",
+    "sectors": {
+      "all": "All Sectors",
+      "club": "Club (Sector 1)",
+      "community": "Community Center (Sector 2)",
+      "mosque": "Mosque (Sector 3)",
+      "hospital": "Hospital (Sector 4)",
+      "school": "Educational Institute (Sector 5)",
+      "graveyard": "Graveyard (Sector 6)",
+      "park": "Park (Sector 7)",
+      "residence": "Residential Area (Sector 8)",
+      "mall": "Shopping Mall (Sector 9)"
+    }
+  },
+  "About": {
+    "title": "About Us",
+    "storyHeadline": "Serving Real Estate Since 2010",
+    "storyText": "For 16 years, ATI Society has been a trusted developer of residential properties in Keraniganj. Our journey began with a vision of creating a planned community. Today, Ati Model Town is home to over 25,000 people, standing as a testament to legal transparency, high-quality development, and comfortable living.",
+    "valuesHeadline": "Our Core Values",
+    "valueTransparencyTitle": "100% Legal Transparency",
+    "valueTransparencyText": "We guarantee dispute-free land. Every plot is individually mutated and RAJUK-approved, giving you absolute peace of mind.",
+    "valueQualityTitle": "Infrastructure First",
+    "valueQualityText": "Unlike other projects, we pave internal roads and lay drainage and utility networks before plot handovers, allowing immediate construction.",
+    "valueCommunityTitle": "Sustainable Communities",
+    "valueCommunityText": "Schools, health clinics, commercial spaces, and recreation parks are integrated into the master plan for self-sufficient living.",
+    "complianceHeadline": "Legal Approvals & Compliance",
+    "complianceText": "Ati Model Town is a RAJUK-approved layout project. All land is purchased with clear chain of deeds, mutated under CS, RS, and BS records. We ensure fast registration and mutation processes for all new buyers.",
+    "team": {
+      "eyebrow": "Our Leadership",
+      "title": "Leadership & Management",
+      "subtitle": "Meet the visionaries and professionals driving the development of Ati Model Town.",
+      "boardTitle": "Board of Directors",
+      "mgmtTitle": "Management Committee",
+      "board": [
+        {
+          "name": "A.T.M. Jahangir",
+          "role": "Chairman"
+        },
+        {
+          "name": "Md. Rafiqul Islam",
+          "role": "Managing Director"
+        },
+        {
+          "name": "Alhaj Abul Kalam",
+          "role": "Director"
+        },
+        {
+          "name": "Engr. M. A. Rashid",
+          "role": "Director (Development)"
+        },
+        {
+          "name": "Kazi Masud Rana",
+          "role": "Director (Finance)"
+        },
+        {
+          "name": "Advocate Kamrul Hasan",
+          "role": "Legal Advisor"
+        }
+      ],
+      "mgmt": [
+        {
+          "name": "S. M. Kamrul",
+          "role": "General Manager"
+        },
+        {
+          "name": "Farhana Yasmin",
+          "role": "Head of Sales & Marketing"
+        },
+        {
+          "name": "Md. Harun-ur-Rashid",
+          "role": "Assistant Manager"
+        },
+        {
+          "name": "Mohammad Ali",
+          "role": "Project Site Supervisor"
+        }
+      ]
+    }
+  },
+  "Footer": {
+    "tagline": "Building secure, green, and structured communities since 2010.",
+    "colLinks": "Quick Links",
+    "colPlots": "Plot Types",
+    "colContact": "Support",
+    "copyright": "© 2026 ATI Society. All rights reserved."
+  }
+}

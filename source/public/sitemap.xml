@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Home English -->
+  <url>
+    <loc>https://www.atihousing.com/en</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.atihousing.com/en" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.atihousing.com/bn" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.atihousing.com/en" />
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Home Bangla -->
+  <url>
+    <loc>https://www.atihousing.com/bn</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.atihousing.com/en" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.atihousing.com/bn" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.atihousing.com/en" />
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Plots English -->
+  <url>
+    <loc>https://www.atihousing.com/en/plots</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.atihousing.com/en/plots" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.atihousing.com/bn/plots" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.atihousing.com/en/plots" />
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Plots Bangla -->
+  <url>
+    <loc>https://www.atihousing.com/bn/plots</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.atihousing.com/en/plots" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.atihousing.com/bn/plots" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.atihousing.com/en/plots" />
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Amenities English -->
+  <url>
+    <loc>https://www.atihousing.com/en/amenities</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.atihousing.com/en/amenities" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.atihousing.com/bn/amenities" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.atihousing.com/en/amenities" />
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Amenities Bangla -->
+  <url>
+    <loc>https://www.atihousing.com/bn/amenities</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.atihousing.com/en/amenities" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.atihousing.com/bn/amenities" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.atihousing.com/en/amenities" />
+    <priority>0.7</priority>
+  </url>
+
+  <!-- About English -->
+  <url>
+    <loc>https://www.atihousing.com/en/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.atihousing.com/en/about" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.atihousing.com/bn/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.atihousing.com/en/about" />
+    <priority>0.6</priority>
+  </url>
+
+  <!-- About Bangla -->
+  <url>
+    <loc>https://www.atihousing.com/bn/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.atihousing.com/en/about" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.atihousing.com/bn/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.atihousing.com/en/about" />
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Gallery English -->
+  <url>
+    <loc>https://www.atihousing.com/en/gallery</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.atihousing.com/en/gallery" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.atihousing.com/bn/gallery" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.atihousing.com/en/gallery" />
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Gallery Bangla -->
+  <url>
+    <loc>https://www.atihousing.com/bn/gallery</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.atihousing.com/en/gallery" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.atihousing.com/bn/gallery" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.atihousing.com/en/gallery" />
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Contact English -->
+  <url>
+    <loc>https://www.atihousing.com/en/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.atihousing.com/en/contact" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.atihousing.com/bn/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.atihousing.com/en/contact" />
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Contact Bangla -->
+  <url>
+    <loc>https://www.atihousing.com/bn/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.atihousing.com/en/contact" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.atihousing.com/bn/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.atihousing.com/en/contact" />
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
