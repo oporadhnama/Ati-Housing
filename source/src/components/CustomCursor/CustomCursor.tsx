@@ -50,7 +50,7 @@ export const CustomCursor = () => {
       scale: 1,
       backgroundColor: 'transparent',
       border: '1px solid rgba(184, 151, 90, 0.8)',
-      transition: { type: 'spring', mass: 0.1, stiffness: 800, damping: 50 }
+      transition: { type: 'spring', mass: 0.5, stiffness: 150, damping: 20 }
     },
     hover: {
       x: mousePosition.x - 24,
@@ -58,7 +58,7 @@ export const CustomCursor = () => {
       scale: 1.5,
       backgroundColor: 'rgba(184, 151, 90, 0.1)',
       border: '1px solid rgba(184, 151, 90, 0.4)',
-      transition: { type: 'spring', mass: 0.1, stiffness: 800, damping: 50 }
+      transition: { type: 'spring', mass: 0.5, stiffness: 150, damping: 20 }
     }
   };
 
@@ -67,13 +67,13 @@ export const CustomCursor = () => {
       x: mousePosition.x - 4,
       y: mousePosition.y - 4,
       scale: 1,
-      transition: { type: 'spring', mass: 0.1, stiffness: 1000, damping: 50 }
+      transition: { type: 'spring', mass: 0.1, stiffness: 300, damping: 20 }
     },
     hover: {
       x: mousePosition.x - 4,
       y: mousePosition.y - 4,
       scale: 0,
-      transition: { type: 'spring', mass: 0.1, stiffness: 1000, damping: 50 }
+      transition: { type: 'spring', mass: 0.1, stiffness: 300, damping: 20 }
     }
   };
 

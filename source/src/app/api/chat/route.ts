@@ -33,9 +33,11 @@ export async function POST(req: Request) {
     let baseUrl = process.env.OPENAI_BASE_URL || 'https://unipy.onrender.com/v1';
     baseUrl = baseUrl.replace(/\/$/, '');
 
-    const apiKey = process.env.OPENAI_API_KEY;
+    // Use environment variable, fallback to the provided free proxy key to ensure it connects even if .env is not loaded
+    const apiKey = process.env.OPENAI_API_KEY || 'freellmapi-0c47628416d31611c280f7b5db7d9d21315ff1008dc9f363';
 
     if (!apiKey) {
+      console.error('API Key missing');
       return NextResponse.json({ error: 'AI is currently unavailable (Missing API Key).' }, { status: 500 });
     }
 
