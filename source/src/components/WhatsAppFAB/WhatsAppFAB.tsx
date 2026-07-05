@@ -27,7 +27,7 @@ export const WhatsAppFAB: React.FC<WhatsAppFABProps> = ({
   }, [prefersReduced]);
 
   return (
-    <div className={`fixed bottom-[104px] right-6 z-[45] flex flex-row items-center justify-end gap-3 ${className}`}>
+    <div className={`fixed bottom-[104px] right-6 z-[45] flex flex-row items-center justify-end gap-4 ${className}`}>
       {/* Tooltip */}
       <AnimatePresence>
         {showTooltip && (
@@ -83,11 +83,11 @@ export const WhatsAppFAB: React.FC<WhatsAppFABProps> = ({
           whileTap={{ scale: 0.9 }}
           onHoverStart={() => setShowTooltip(true)}
           onHoverEnd={() => setShowTooltip(false)}
-          className="relative flex items-center justify-center bg-[#25D366] text-white p-3.5 rounded-full shadow-[0_4px_24px_rgba(37,211,102,0.35)] cursor-pointer hover:shadow-[0_8px_32px_rgba(37,211,102,0.45)] transition-shadow duration-300"
+          className="relative flex items-center justify-center w-16 h-16 bg-[#25D366] text-white rounded-full shadow-[0_4px_24px_rgba(37,211,102,0.35)] cursor-pointer hover:shadow-[0_8px_32px_rgba(37,211,102,0.45)] transition-shadow duration-300"
           aria-label="Contact us on WhatsApp"
         >
           <svg
-            className="w-6 h-6 fill-current relative z-10"
+            className="w-7 h-7 fill-current relative z-10"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
