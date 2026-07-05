@@ -63,5 +63,7 @@ export * from './TeamGrid/TeamGrid.types';
 export * from './RevealOnScroll/RevealOnScroll';
 export * from './CustomCursor/CustomCursor';
 export * from './MagneticWrapper/MagneticWrapper';
+export * from './SearchModal/SearchModal';
+
 export * from './PageTransition/PageTransition';
 export * from './AIChat/AIChat';
