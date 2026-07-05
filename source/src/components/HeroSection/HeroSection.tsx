@@ -117,7 +117,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   return (
     <section
       ref={sectionRef}
-      className={`relative min-h-screen flex items-center bg-brand-navy text-white overflow-hidden ${className}`}
+      className={`relative min-h-[100svh] flex items-center bg-brand-navy text-white overflow-hidden ${className}`}
       aria-label="Hero section"
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
@@ -184,11 +184,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         <div className="absolute inset-0 hero-overlay-gradient z-10 pointer-events-none" />
         {/* Extra side vignette */}
         <div
-          className="absolute inset-0 z-10 pointer-events-none"
-          style={{
-            background:
-              'radial-gradient(ellipse at 70% 50%, transparent 40%, rgba(25,43,69,0.55) 100%)',
-          }}
+          className="absolute inset-0 z-10 pointer-events-none bg-[radial-gradient(circle_at_center,_transparent_20%,_rgba(25,43,69,0.7)_100%)] md:bg-[radial-gradient(ellipse_at_70%_50%,_transparent_40%,_rgba(25,43,69,0.55)_100%)]"
         />
       </div>
 

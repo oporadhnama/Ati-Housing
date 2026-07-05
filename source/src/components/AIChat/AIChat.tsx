@@ -79,9 +79,9 @@ export const AIChat = () => {
               initial={{ x: 20, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 1 }}
-              className="hidden md:block bg-surface-white text-text-primary px-4 py-2 rounded-full shadow-lg border border-brand-gold/30 text-sm font-semibold pointer-events-none"
+              className="bg-surface-white text-text-primary px-3 py-1.5 md:px-4 md:py-2 rounded-full shadow-lg border border-brand-gold/30 text-xs md:text-sm font-semibold pointer-events-none whitespace-nowrap"
             >
-              Ask AI about us
+              Ask AI
             </motion.div>
             
             <button
