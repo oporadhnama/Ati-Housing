@@ -27,7 +27,7 @@ export const WhatsAppFAB: React.FC<WhatsAppFABProps> = ({
   }, [prefersReduced]);
 
   return (
-    <div className={`fixed bottom-[104px] right-6 z-[45] flex flex-row items-center justify-end gap-3 ${className}`}>
+    <div className={`fixed bottom-[160px] right-6 z-[45] flex flex-row items-center justify-end gap-3 ${className}`}>
       {/* Tooltip */}
       <AnimatePresence>
         {showTooltip && (

@@ -109,18 +109,18 @@ export const GalleryGrid: React.FC<GalleryGridProps> = ({
         </div>
       </div>
 
-      {/* Masonry Layout Grid */}
+      {/* Grid Layout */}
       {filteredImages.length === 0 ? (
         <div className="text-center py-16 text-text-muted text-sm font-body bg-surface-cream border border-border-subtle max-w-md mx-auto">
           {t('emptyState')}
         </div>
       ) : (
-        <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredImages.map((img, idx) => (
             <div
               key={idx}
               onClick={() => setSelectedIdx(idx)}
-              className="break-inside-avoid bg-surface-white border border-border-subtle hover:border-brand-gold hover:shadow-card transition-all duration-300 rounded-none overflow-hidden cursor-pointer group"
+              className="bg-surface-white border border-border-subtle hover:border-brand-gold hover:shadow-card transition-all duration-300 rounded-none overflow-hidden cursor-pointer group"
             >
               {/* Image Frame */}
               <div className="relative w-full aspect-[4/3] sm:aspect-auto overflow-hidden">
