@@ -27,20 +27,20 @@ export const WhatsAppFAB: React.FC<WhatsAppFABProps> = ({
   }, [prefersReduced]);
 
   return (
-    <div className={`fixed bottom-6 right-6 z-50 flex items-center justify-end gap-3 ${className}`}>
+    <div className={`fixed bottom-6 left-6 z-50 flex flex-row-reverse items-center justify-end gap-3 ${className}`}>
       {/* Tooltip */}
       <AnimatePresence>
         {showTooltip && (
           <motion.div
-            initial={{ opacity: 0, x: 12, scale: 0.9 }}
+            initial={{ opacity: 0, x: -12, scale: 0.9 }}
             animate={{ opacity: 1, x: 0, scale: 1 }}
-            exit={{ opacity: 0, x: 8, scale: 0.95 }}
+            exit={{ opacity: 0, x: -8, scale: 0.95 }}
             transition={{ duration: 0.22, ease: [0.22, 1, 0.36, 1] }}
             className="bg-[#0b1420] text-white text-xs font-body font-medium px-3 py-2 rounded-sm shadow-lg whitespace-nowrap border border-brand-gold/20 pointer-events-none"
           >
             Chat with us on WhatsApp
             {/* Arrow */}
-            <span className="absolute right-[-5px] top-1/2 -translate-y-1/2 w-0 h-0 border-t-[5px] border-t-transparent border-b-[5px] border-b-transparent border-l-[5px] border-l-[#0b1420]" />
+            <span className="absolute left-[-5px] top-1/2 -translate-y-1/2 w-0 h-0 border-t-[5px] border-t-transparent border-b-[5px] border-b-transparent border-r-[5px] border-r-[#0b1420]" />
           </motion.div>
         )}
       </AnimatePresence>
