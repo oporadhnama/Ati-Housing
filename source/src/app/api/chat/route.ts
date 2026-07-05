@@ -42,7 +42,7 @@ export async function POST(req: Request) {
     }
 
     const payload = {
-      model: 'gpt-3.5-turbo', // Generic model fallback
+      model: 'auto', // Required by the unipy free LLM router
       messages: [
         { role: 'system', content: SYSTEM_PROMPT },
         ...messages
